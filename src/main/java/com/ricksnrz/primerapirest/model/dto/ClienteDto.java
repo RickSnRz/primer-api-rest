@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.Date;
 
 @Data
@@ -16,6 +17,7 @@ public class ClienteDto implements Serializable {
     private String nombre;
     private String apellido;
     private String correo;
-    private Date fechaRegistro;
+    private String telefono;
+    private LocalDate fechaRegistro;
 
 }

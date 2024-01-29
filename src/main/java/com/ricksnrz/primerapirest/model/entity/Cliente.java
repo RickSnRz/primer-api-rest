@@ -1,9 +1,11 @@
 package com.ricksnrz.primerapirest.model.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.Date;
 
 @Data
@@ -12,7 +14,7 @@ import java.util.Date;
 @ToString
 @Builder
 @Entity
-@Table(name = "cliente")
+@Table(name = "cliente", schema = "db_springboot_dev")
 public class Cliente implements Serializable {
 
     @Id
@@ -25,6 +27,9 @@ public class Cliente implements Serializable {
     private String apellido;
     @Column(name = "correo")
     private String correo;
+    @Column(name = "telefono")
+    private String telefono;
     @Column(name = "fecha_registro")
-    private Date fechaRegistro;
+    @JsonFormat(pattern = "yyyy-MM-dd", timezone = "UTC")
+    private LocalDate fechaRegistro;
 }

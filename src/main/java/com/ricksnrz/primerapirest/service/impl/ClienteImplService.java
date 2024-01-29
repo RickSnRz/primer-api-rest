@@ -29,6 +29,7 @@ public class ClienteImplService implements IClienteService {
                 .nombre(clienteDto.getNombre())
                 .apellido(clienteDto.getApellido())
                 .correo(clienteDto.getCorreo())
+                .telefono(clienteDto.getTelefono())
                 .fechaRegistro(clienteDto.getFechaRegistro())
                 .build();
         return clienteDao.save(cliente);

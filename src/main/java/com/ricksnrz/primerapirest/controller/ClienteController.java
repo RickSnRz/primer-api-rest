@@ -50,6 +50,7 @@ public class ClienteController {
                     .nombre(clienteSave.getNombre())
                     .apellido(clienteSave.getApellido())
                     .correo(clienteSave.getCorreo())
+                    .telefono(clienteSave.getTelefono())
                     .fechaRegistro(clienteSave.getFechaRegistro())
                     .build();
 
@@ -83,6 +84,7 @@ public class ClienteController {
                                 .nombre(clienteUpdate.getNombre())
                                 .apellido(clienteUpdate.getApellido())
                                 .correo(clienteUpdate.getCorreo())
+                                .telefono(clienteUpdate.getTelefono())
                                 .fechaRegistro(clienteUpdate.getFechaRegistro())
                                 .build())
                         .build(), HttpStatus.CREATED);
@@ -141,6 +143,7 @@ public class ClienteController {
                         .nombre(cliente.getNombre())
                         .apellido(cliente.getApellido())
                         .correo(cliente.getCorreo())
+                        .telefono(cliente.getTelefono())
                         .fechaRegistro(cliente.getFechaRegistro())
                         .build())
                 .build(), HttpStatus.OK);
