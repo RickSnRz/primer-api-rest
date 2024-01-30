@@ -1,11 +1,8 @@
-package com.ricksnrz.primerapirest.model.entity;
+package com.ricksnrz.primerapirest.model.entity.db1;
 
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.math.BigDecimal;
@@ -19,11 +16,13 @@ import java.util.Date;
 @ToString
 @Builder
 @Entity
-@Table(name = "producto", schema = "db_springboot_dev")
+@Table(name = "producto")
+@PersistenceContext(unitName = "db1")
 public class Producto {
 
     @Id
     @Column(name = "id_producto")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idProducto;
     @Column(name = "nombre")
     private String nombre;

@@ -1,4 +1,4 @@
-package com.ricksnrz.primerapirest.model.entity;
+package com.ricksnrz.primerapirest.model.entity.db1;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
@@ -14,7 +14,8 @@ import java.util.Date;
 @ToString
 @Builder
 @Entity
-@Table(name = "cliente", schema = "db_springboot_dev")
+@Table(name = "cliente")
+@PersistenceContext(unitName = "db1")
 public class Cliente implements Serializable {
 
     @Id

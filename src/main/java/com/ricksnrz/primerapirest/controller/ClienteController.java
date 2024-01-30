@@ -2,7 +2,7 @@ package com.ricksnrz.primerapirest.controller;
 
 
 import com.ricksnrz.primerapirest.model.dto.ClienteDto;
-import com.ricksnrz.primerapirest.model.entity.Cliente;
+import com.ricksnrz.primerapirest.model.entity.db1.Cliente;
 import com.ricksnrz.primerapirest.model.payload.MensajeResponse;
 import com.ricksnrz.primerapirest.service.IClienteService;
 import org.springframework.beans.factory.annotation.Autowired;

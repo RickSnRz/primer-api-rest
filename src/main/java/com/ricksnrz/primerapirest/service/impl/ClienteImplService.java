@@ -1,8 +1,8 @@
 package com.ricksnrz.primerapirest.service.impl;
 
-import com.ricksnrz.primerapirest.model.dao.ClienteDao;
+import com.ricksnrz.primerapirest.model.dao.db1.ClienteDao;
 import com.ricksnrz.primerapirest.model.dto.ClienteDto;
-import com.ricksnrz.primerapirest.model.entity.Cliente;
+import com.ricksnrz.primerapirest.model.entity.db1.Cliente;
 import com.ricksnrz.primerapirest.service.IClienteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

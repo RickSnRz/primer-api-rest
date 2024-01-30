@@ -1,7 +1,7 @@
 package com.ricksnrz.primerapirest.service;
 
 import com.ricksnrz.primerapirest.model.dto.ClienteDto;
-import com.ricksnrz.primerapirest.model.entity.Cliente;
+import com.ricksnrz.primerapirest.model.entity.db1.Cliente;
 
 import java.util.List;
 

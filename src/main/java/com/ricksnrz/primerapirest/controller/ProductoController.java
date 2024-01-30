@@ -3,7 +3,7 @@ package com.ricksnrz.primerapirest.controller;
 
 
 import com.ricksnrz.primerapirest.model.dto.ProductoDto;
-import com.ricksnrz.primerapirest.model.entity.Producto;
+import com.ricksnrz.primerapirest.model.entity.db1.Producto;
 import com.ricksnrz.primerapirest.model.payload.MensajeResponse;
 import com.ricksnrz.primerapirest.service.IProductoService;
 import org.springframework.beans.factory.annotation.Autowired;
